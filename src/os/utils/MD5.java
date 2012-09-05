@@ -73,4 +73,8 @@ public class MD5 {
             throw new RuntimeException(e);
         }
 	}
+	
+	public static String hex(String buffer) {
+		return BytesUtil.toHex(bytes(buffer.getBytes()));
+	}
 }
